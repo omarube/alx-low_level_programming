@@ -1,16 +1,23 @@
-#include "main.h"
+#include"main.h"
 
 /**
- * main - check the code
+ * print_to_98 - print n to 98 counts
+ *           separated by comma, followed
+ *           by space and number should be
+ *           printed in order
  *
- * Return: Always 0.
- */
-int main(void)
+ * @n: input
+*/
+
+void print_to_98(int n)
 {
-    print_to_98(0);
-    print_to_98(98);
-    print_to_98(111);
-    print_to_98(81);
-    print_to_98(-10);
-    return (0);
+	int count;
+
+	if (n > 98)
+		for (count = n; count > 98; --count)
+			printf("%d, ", count);
+	else
+		for (count = n; count < 98; ++count)
+			printf("%d, ", count);
+	printf("98\n");
 }
