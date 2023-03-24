@@ -1,18 +1,15 @@
-#include "../main.h"
+#include "main.h"
 
 /**
- * main - check the code for ALX School students
+ * _isdigit - checks for a digit (0 through 9).
+ * @c: The character to be checked
  *
- * Return: Always 0 (Success)
-*/
-
-int main(void)
+ * Return: 1 if c is a digit, 0 otherwise.
+ */
+int _isdigit(int c)
 {
-	char c;
-
-	c = '0';
-	printf("%c: %d\n", c, _isdigit(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isdigit(c));
-	return (0);
+    if (c >= '0' && c <= '9')
+        return (1);
+    else
+        return (0);
 }
