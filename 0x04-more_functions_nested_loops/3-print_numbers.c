@@ -1,14 +1,19 @@
-s (11 sloc)  163 Bytes
-#include "../main.h"
+#include "main.h"
 
 /**
- * main - check the code for ALX School students.
- *
- * Return: Always 0 (Success)
+*print_numbers - print 0123456789
+* owned by Bwave ICT
+*Return: void
 */
 
-int main(void)
+void print_numbers(void)
 {
-	print_numbers();
-	return (0);
+	char c;
+
+	for (c = '0'; c <= '9'; c++)
+	{
+	_putchar(c);
+	}
+	_putchar('\n');
 }
+
